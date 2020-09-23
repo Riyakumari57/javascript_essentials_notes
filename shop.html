@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header {
+            height: 70px;
+            width: 100%;
+            background-color: lightpink;
+            line-height: 70px;
+        }
+
+        h1 {
+            width: 30%;
+            display: inline-block;
+            font-family: cursive;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .search {
+            height: 70px;
+            width: 67%;
+            /* background-color:mistyrose; */
+            display: inline-block;
+            text-align: center;
+            /*margin-top: 50px;
+            margin-bottom: 20px; */
+        }
+
+        .search input {
+            border-color: none;
+            border-radius: 5px;
+            border-width: 2px;
+            border-style: solid;
+            height: 40px;
+            width: 50%;
+            text-indent: 20px;
+            padding-left: 20px;
+
+        }
+
+        .products {
+            width: 100%;
+            height: auto;
+            /* background-color: rgb(252, 216, 222); */
+        }
+
+        .productwrapper {
+            height: auto;
+            width: 80%;
+            /* background-color:whitesmoke; */
+            margin-left: 10%;
+            margin-bottom: 50px;
+        }
+
+        .product {
+            height: auto;
+            width: 25%;
+            /* background-color:rgb(252, 216, 222); */
+            display: inline-block;
+            margin-top: 35px;
+            margin-left: 70px;
+           border: 2px solid lightslategray;
+        }
+
+        .prodimg {
+            height: 300px;
+            width: 100%;
+            background-color: linen;
+            overflow: hidden;
+        }
+
+        .product h3,
+        .product p {
+            padding: 5px;
+            padding-left: 10px;
+        }
+        .footer {
+            height: 70px;
+            width: 100%;
+            background-color: lightpink;
+            /* line-height: 40px; */
+        }
+
+        button
+        {
+            display: inline;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="font-size: 50px;">SHE</h1>
+        <div class="search">
+            <input type="search"  placeholder="Search" onkeyup="SearchFunction(this.value)" />
+        </div>
+    </div>
+    <div class="products">
+        <div class="productwrapper" id="productwrapper"></div>
+    </div>
+     <div class="footer">
+    <div class="products">
+        <h1>Cart</h1>
+        <div class="productwrapper" id="cart"></div>
+        </div>
+        </div>
+    <script src="shopping.js"></script>
+</body>
+
+</html>
